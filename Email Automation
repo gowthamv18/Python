@@ -1,0 +1,13 @@
+import smtplib
+
+server = smtplib.SMTP_SSL("smtp.gmail.com" ,465)
+server.login("gowthamv18@gmail.com","khajasunni")
+server.sendmail("gowthamv18@gmail.com","drandas07@gmail.com","Hi This is a automated smtp server message")
+
+server.quit()
+
+
+Output:-
+------
+
+(221, b'2.0.0 closing connection m4sm1853479pfm.26 - gsmtp')
